@@ -1,0 +1,56 @@
+.fcontainer{
+    border: 2px solid grey;
+    height: 45vh;
+    display: flex;
+    /* flex-direction: row-reverse; */
+
+    
+
+    /* controls alignment of all items on the main axis. */
+
+    justify-content: flex-end;
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* justify-content:space-evenly ; */
+
+
+
+    /* controls alignment of all items on the cross axis. */
+
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: baseline; */
+
+
+
+    /* flex-wrap: wrap; */           /* The flex-wrap  sets whether flex items are forced onto one line or can wrap onto multiple lines */
+
+    /* flex: 200 px; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: column wrap */
+    
+    
+}
+
+.fitem{
+    background-color: red;
+    border: 2px solid black;
+    margin:12px;
+    width: 122px;
+    height: 122px;
+}
+
+.item1{
+    /* order: 3; */
+    /* flex-grow: 3;  */     /* controls alignment of all items on the cross axis. */
+     
+    flex-shrink: 2;
+    /* align-self: center; */    /*only for this item it will align it in center*/
+   
+}
+
+.item4{
+    order: 4;
+    /* flex-grow: 2; */
+}

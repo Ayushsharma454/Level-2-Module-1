@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.container{
+    background-color: white;
+    height: 700px;
+    /* width: 900px; */
+    display: grid;
+    /* grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px; */
+    /* grid-template-columns: repeat(3, 1fr);   repeat 3 times for columns, utilize the entire  space for 3 columns */
+    
+    grid-template-columns: 1fr 1fr 1fr;    /*1fr = 1 fraction of the entire width available*/
+    grid-template-rows: 143px 1fr 43px;
+    row-gap: 12px;
+    column-gap: 12px; 
+    /* justify-items: center; */
+    /* align-items: center; */
+    /* place-items: center; */
+}
+
+
+.item{
+    background-color: aqua;
+    place-self: start;
+    height: 122px;
+    width: 122px;
+}
+
+.item1{
+    grid-column: 1/4;
+    /* grid-column-end: 4; */
+    
+    width:100vw;
+}
+.item2{
+    justify-self: center;
+    align-self: center;
+    /* place-self: center;  Both properties get center */
+}
+ 
+.item4{
+    place-self: end;
+}
+.footer{ 
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    grid-column: 1/4;
+    width: 100vw;
+}
